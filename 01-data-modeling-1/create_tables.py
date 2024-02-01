@@ -44,8 +44,8 @@ create_table_queries = [
 ]
 drop_table_queries = [
     table_drop_events,
-    table_drop_repo,
     table_drop_actors,
+    table_drop_repo,
 ]
 
 
