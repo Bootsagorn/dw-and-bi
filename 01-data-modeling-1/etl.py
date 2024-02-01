@@ -83,7 +83,8 @@ def process(cur, conn, filepath):
                         id,
                         type,
                         actor_id
-                    ) VALUES ('{each["id"]}', '{each["type"]}', '{each["actor"]["id"]}')
+                        repo_id
+                    ) VALUES ('{each["id"]}', '{each["type"]}', '{each["actor"]["id"]}', '{each["repo"]["id"]}')
                     ON CONFLICT (id) DO NOTHING
                 """
                 # print(insert_statement)
