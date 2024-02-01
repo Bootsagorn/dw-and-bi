@@ -21,7 +21,6 @@ table_create_repo = """
     CREATE TABLE IF NOT EXISTS repo (
         id int,
         name text,
-		url text,
         PRIMARY KEY(id)
     )
 """
@@ -30,10 +29,10 @@ table_create_events = """
         id text,
         type text,
         actor_id int,
-		repo_id int,
+	repo_id int,
         PRIMARY KEY(id),
         CONSTRAINT fk_actor FOREIGN KEY(actor_id) REFERENCES actors(id)
-		CONSTRAINT fk_repo FOREIGN KEY(repo_id) REFERENCES repo(id)
+	CONSTRAINT fk_repo FOREIGN KEY(repo_id) REFERENCES repo(id)
     )
 """
 
@@ -45,8 +44,8 @@ create_table_queries = [
 ]
 drop_table_queries = [
     table_drop_events,
-	table_drop_repo,
-	table_drop_actors,
+    table_drop_repo,
+    table_drop_actors,
 ]
 
 
