@@ -7,7 +7,7 @@ Documentation Data Modeling 2
       	   1)  id  (PK)  --> เก็บข้อมูลเป็น  text 
    	       2)  type (PK) --> เก็บข้อมูลเป็น text // การเก็บข้อมูล type สามารถเอามาดูได้ว่าผู้ใช้ทำ events  type แบบใด 
      	   3)  public --> เก็บข้อมูลเป็น boolean // การเก็บข้อมูล public สามารถรู้ได้ว่า events นี้เปิดให้ดูเป็น public หรือไหม สามารถ query เรียกดูแค่ข้อมูล public = true ได้
-      นอกจากนี้ยังมีการ insert_sample_data เพื่อทดสอบการเชื่อมต่อบน Cassandra database
+           * ในการออกแบบให้ id , type เป็น primary key และ type เป็น clustering column เพื่อเรียงลำดับข้อมูลภายใน partition ของคอลัมน์ id
 5. รัน $ cqlsh ทำการเชื่อมต่อกับ Cassandra database เพื่อ Test Cluster
 6. รัน cqlsh> select * from github_events.events ; เพื่อดู insert_sample_data ที่ได้เพิ่มเข้าไป
 7. เมื่อทดสอบเสร็จ cqlsh> exit 
