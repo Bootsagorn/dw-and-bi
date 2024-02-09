@@ -14,6 +14,7 @@
  * ในการออกแบบให้ id , type เป็น primary key และ type เป็น clustering column เพื่อเรียงลำดับข้อมูลภายใน partition ของคอลัมน์ id
 5. รัน $ cqlsh ทำการเชื่อมต่อกับ Cassandra database เพื่อ Test Cluster
 6. รัน cqlsh> select * from github_events.events ; เพื่อเรียกดูข้อมูลจากตารางที่ได้ออกแบบ
+![Alt text](image/data2.png)
 7. เมื่อทดสอบเสร็จ cqlsh> exit 
 
 
