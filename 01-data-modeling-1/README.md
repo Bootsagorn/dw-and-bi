@@ -1,10 +1,10 @@
 ## Data modeling 1 ##
 1. จากไฟล์ข้อมูล json จะความสัมพันธ์เพิ่มเติมระหว่าง table repo , table actors กับ table events  โดยเป็นความสัมพันธ์แบบ one to many โดยตาราง repo , actors เป็น one ส่วนทาง events เป็น many 
-* 1) table events
+* 1) table events -->
     id (PK)  , type , actor_id (FK) , repo-id (FK)
-* 2) table actors
+* 2) table actors -->
     id (FK) , login
-* 3) table repo
+* 3) table repo -->
     id (FK) , name 
 2. ทำการเพิ่ม code ในส่วน repo table ใน file etl.py และ create_tables.py  ใน folder 01-data-modeling-1
 3.ทำการใช้งาน database 
