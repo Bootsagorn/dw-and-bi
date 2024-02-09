@@ -1,4 +1,4 @@
-Documentation Data Modeling 2
+## Documentation Data Modeling 2 ##
 1. ทำการรัน pip install cqlsh ติดตั้งเครื่องมือ cqlsh ผ่าน pip เพื่อเชื่อมต่อการทำงานกับ Cassandra database
 2. ทำการรัน docker compose up เพื่อเปิดการใช้งานแอพในไฟล์ docker-compose.yml
 3. เปิดหน้า ports 9042 เพื่อดูการเชื่อมต่อบน browser 
@@ -13,11 +13,11 @@ Documentation Data Modeling 2
 * 8)  public --> เก็บข้อมูลเป็น boolean // การเก็บข้อมูล public สามารถรู้ได้ว่า events นี้เปิดให้ดูเป็น public หรือไหม สามารถ query เรียกดูแค่ข้อมูล public = true ได้
  * ในการออกแบบให้ id , type เป็น primary key และ type เป็น clustering column เพื่อเรียงลำดับข้อมูลภายใน partition ของคอลัมน์ id
 5. รัน $ cqlsh ทำการเชื่อมต่อกับ Cassandra database เพื่อ Test Cluster
-6. รัน cqlsh> select * from github_events.events ; เพื่อดู insert_sample_data ที่ได้เพิ่มเข้าไป
+6. รัน cqlsh> select * from github_events.events ; เพื่อเรียกดูข้อมูลจากตารางที่ได้ออกแบบ
 7. เมื่อทดสอบเสร็จ cqlsh> exit 
 
 
-Instruction Data Modeling 2 
+## Instruction Data Modeling 2 ##
 1. open file in folder 02-data-modeling-2  --> cd 02-data-modeling-2
 2. link to connect with Cassandra -- > $ pip install cqlsh
 3. link to connect with file docker -->$  docker compose up 
