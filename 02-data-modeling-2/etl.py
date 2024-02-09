@@ -7,6 +7,7 @@ from cassandra.cluster import Cluster
 
 table_drop = "DROP TABLE events"
 
+
 table_create = """
     CREATE TABLE IF NOT EXISTS events
     (
@@ -63,6 +64,7 @@ def get_files(filepath: str) -> List[str]:
     return all_files
 
 
+
 def process(session, filepath):
     # Get list of files from filepath
     all_files = get_files(filepath)
@@ -73,7 +75,7 @@ def process(session, filepath):
             for each in data:
 
                 # Print some sample data
-                # print(each["id"], each["type"], each["actor"]["id"], each["actor"]["login"])
+                   # print(each["id"], each["type"], each["actor"]["id"], each["actor"]["login"], created_at)
 
                 # Insert data into tables here
                 query = f"""
