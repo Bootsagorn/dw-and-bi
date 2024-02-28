@@ -1,9 +1,9 @@
 ## Documentation Building a data to warehouse ##
 บนหน้า google cloud 
 
-1.ทำการสร้าง dataset บน google cloud bigquery ชื่อ github 
-2.กดดู Dataset info นำ project_id = "ds525datawarehouse" มาใส่ในไฟล์ etl_bigquery.py
-3.บน google cloud ให้ไปที่ IAM & admin --> service account --> create service account 
+1. ทำการสร้าง dataset บน google cloud bigquery ชื่อ github 
+2. กดดู Dataset info นำ project_id = "ds525datawarehouse" มาใส่ในไฟล์ etl_bigquery.py
+3. บน google cloud ให้ไปที่ IAM & admin --> service account --> create service account 
 เมื่อสร้าง service account เสร็จแล้วให้กดที่ service account ที่สร้างแล้ว --> keys -> add Keys -> create new key 
 -> เลือก ่json -> create ไฟล์ json จะถูก download มาเก็บในเครื่องคอมพิวเตอร์ นำไฟล์มา upload ขึ้นบน codespaces
 จากนั้นนำ file_path ที่อยู่ของ file json มาใส่ในส่วน keyfile บน etl_bigquery.py
