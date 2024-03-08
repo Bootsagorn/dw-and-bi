@@ -36,7 +36,7 @@ table = spark.sql("""
 ```sh
 docker-compose up
 ```
-2. กด ports 8888 ตรง browser จะเชื่อมต่อไปยัง Jupyter Lab ให้นำเลข token มาใส่ 
+2. กด ports 8888 ตรง browser จะเชื่อมต่อไปยัง Jupyter Lab ให้นำเลข token มาใส่ เพื่อ log in เข้า
 ![Alt text](image_readme/pic1.png)
 3.หน้าที่เชื่อมต่อกับ Jupyter Lab
 ![Alt text](image_readme/pic2.png)
