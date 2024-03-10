@@ -1,17 +1,16 @@
 ## Instruction Building a data lake ##
-1. คำสั่งใช้ในการเชื่อมต่อกับ Jupyter Lab
-เปิด file 04-building-a-data-lake
+1. เปิด file 04-building-a-data-lake
 ```sh
 $ cd 04-building-a-data-lake/
 ```
-ทำการเชื่อมต่อ file docker-compose.yml
+2. ทำการเชื่อมต่อ file docker-compose.yml
 ```sh
 $ docker-compose up
 ```
-2. กด ports 8888 ตรง browser จะเชื่อมต่อไปยัง Jupyter Lab ให้นำเลข token มาใส่ เพื่อ log in เข้า
+3. กด ports 8888 ตรง browser จะเชื่อมต่อไปยัง Jupyter Lab ให้นำเลข token มาใส่ เพื่อ log in เข้า
 ![Alt text](image_readme/pic1.png)
  
-3.ตัวอย่างหน้าที่เชื่อมต่อกับ Jupyter Lab แล้ว
+4. ตัวอย่างหน้าที่เชื่อมต่อกับ Jupyter Lab แล้ว
 
 ![Alt text](image_readme/pic2.png)
 
