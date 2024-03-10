@@ -46,7 +46,7 @@ table = spark.sql("""
 ```
 ![Alt text](image_readme/pic8.png)
 
-สามารถสร้าง events เพื่อเก็บข้อมูลแยกตามที่ต้องการ เช่น การสร้าง folder actor , repos เก็บข้อมูลเป็น file .csv ไว้
+สามารถสร้าง events เพื่อเก็บข้อมูลแยกตามที่ต้องการ เช่น การสร้าง folder actors , repos เก็บข้อมูลเป็น file .csv ไว้
 ```sh
 output_csv = "output_csv"
 output_parquet = "output_parquet"
@@ -66,7 +66,7 @@ table.write.partitionBy("year", "month", "day").mode("overwrite").csv(destinatio
 ```sh
 table.write.partitionBy("date").mode("overwrite").csv(destination)
 ```
-เช่น folder actor ต้องการเก็บข้อมูล column  actor login , id , actor url เป็นต้น
+เช่น folder actors ต้องการเก็บข้อมูล column  actor login , id , actor url เป็นต้น
 ```sh
 table = spark.sql("""
     select
@@ -79,3 +79,4 @@ table = spark.sql("""
 destination = "actors"
 table.write.mode("overwrite").csv(destination)
 ```
+![Alt text](image_readme/pic6.png)
