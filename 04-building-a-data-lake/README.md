@@ -2,11 +2,11 @@
 1. คำสั่งใช้ในการเชื่อมต่อกับ Jupyter Lab
 เปิด file 04-building-a-data-lake
 ```sh
-cd 04-building-a-data-lake/
+$ cd 04-building-a-data-lake/
 ```
 ทำการเชื่อมต่อ file docker-compose.yml
 ```sh
-docker-compose up
+$ docker-compose up
 ```
 2. กด ports 8888 ตรง browser จะเชื่อมต่อไปยัง Jupyter Lab ให้นำเลข token มาใส่ เพื่อ log in เข้า
 ![Alt text](image_readme/pic1.png)
