@@ -13,8 +13,8 @@ with DAG(
     start = EmptyOperator(task_id="start")
 
     echo_hello = BashOperator(
-        task = "echo_hello",
-        bash_commands"echo 'hello'",
+        task_id = "echo_hello",
+        bash_command ="echo 'hello'",
     )
     end = EmptyOperator(task_id="end")
 
